@@ -65,6 +65,7 @@ The Face Detection project follows a structured pipeline leveraging the YOLOv8 m
 
 
  ## 📁 Dataset Structure 
+```
 /dataset
 ├── images
 │   ├── train
@@ -73,6 +74,7 @@ The Face Detection project follows a structured pipeline leveraging the YOLOv8 m
 │   ├── train
 │   └── val
 └── data.yaml
+```
 
 Download Dataset using the link - https://drive.google.com/file/d/11a64niIzEKQy_1wmrBPY110ToKfzP1DG/view?usp=drive_link
 
