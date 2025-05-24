@@ -132,8 +132,24 @@ The notebook includes code to:
 
 ## Using pretrained Model
 
-### Download the pretrained model using the link -
+### Download the pretrained model using the link and upload it to drive  -
+https://github.com/dhanya807/Face_Detection/blob/main/face_yolov8n_best.pt
+-Save the colab in the drive -
+-Replace the trained model path  to your drive link
+-Replace the prediction image path to your image path in the drive
+-Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
 
+
+
+## High End Architecture
+```mermaid
+flowchart TD
+    A[Environment Setup] --> B[Data Preparation]
+    B --> C[Model Training]
+    C --> D[Evaluation & Metrics Visualization]
+    D --> E[Model Saving]
+    E --> F[Inference & Prediction]
+    F --> G[Model Validation]
 
 
 
