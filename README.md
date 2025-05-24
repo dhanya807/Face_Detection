@@ -15,9 +15,9 @@ This project focuses on face detection using a fine-tuned YOLOv8 model. It takes
 - Fast and accurate bounding box predictions around faces  
 - Easy integration with Python scripts for inference  
 
-The project is designed for image analysis tasks that require robust face localization without real-time video processing.
 
 ## High End Architecture
+
 ```mermaid
 flowchart TD
     A[Environment Setup] --> B[Data Preparation]
