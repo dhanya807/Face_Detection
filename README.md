@@ -81,24 +81,22 @@ Download Dataset using the link - https://www.kaggle.com/datasets/fareselmenshaw
 
 ## 🚀 How to Run the Project
 
+You can build your own model using following steps and get the output-
 ### ✅ 1. Open the Colab Notebook
-Open the notebook by clicking the link below or uploading it to your own Google Drive.
+Open the notebook by downloading it through the link below and upload it to your own Google Drive.
 https://github.com/dhanya807/Face_Detection/blob/main/Face_Detection.ipynb
 
 📓 **Notebook Name:** `Face_Detection.ipynb`  
 📍 Make sure it's in your Google Drive if you're opening from there.
 
 ---
+### ✅ 2. Google Drive Setup
+Make sure your dataset and model save paths point to valid folders in your Drive.  
+The notebook includes code to:
 
-### ✅ 2. Run the Notebook Step-by-Step
-- Go to [Google Colab](https://colab.research.google.com/)
-- Click **File > Open Notebook**
-- Choose the uploaded `.ipynb` file.
-- Download the dataset and upload it your drive.
-- Change the path to your drive path containing the dataset.
-- Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
-
-
+- Mount Google Drive  
+- Access dataset from: `/content/drive/MyDrive/your-dataset-folder/`  
+- Save model weights and output predictions back to Drive  
 ---
 
 ### ✅ 3. Requirements
@@ -111,15 +109,13 @@ Colab will auto-install dependencies, but here are key packages:
 These are installed in the notebook itself, so no local installation is needed.
 
 ---
-
-### ✅ 4. Google Drive Setup
-Make sure your dataset and model save paths point to valid folders in your Drive.  
-The notebook includes code to:
-
-- Mount Google Drive  
-- Access dataset from: `/content/drive/MyDrive/your-dataset-folder/`  
-- Save model weights and output predictions back to Drive  
-
+### ✅ 4. Run the Notebook Step-by-Step
+- Go to [Google Colab](https://colab.research.google.com/)
+- Click **File > Open Notebook**
+- Choose the uploaded `.ipynb` file.
+- Download the dataset and upload it your drive.
+- Change the path to your drive path containing the dataset.
+- Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
 ---
 
 ### ✅ 5. Output
@@ -128,7 +124,7 @@ The notebook includes code to:
 - 📊 Evaluation metrics printed and visualized at the end
 
 
-
+---
 
 ## Using a Pretrained Model for Inference
 
