@@ -135,7 +135,8 @@ The notebook includes code to:
 
 ### Download the pretrained model using the link and upload it to drive  
 https://github.com/dhanya807/Face_Detection/blob/main/face_yolov8n_best.pt
-- Save and save the colab in the drive -
+- Save and save the colab in the drive
+https://github.com/dhanya807/Face_Detection/blob/main/Face_Detection_modelcheck.ipynb
 - Open the colab Noetebook from Drive
 - Replace the trained model path  to your drive link
 - Replace the prediction image path to your image path in the drive
