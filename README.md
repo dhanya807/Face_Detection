@@ -28,16 +28,9 @@ flowchart TD
     D --> E[Model Saving]
     E --> F[Inference & Prediction]
     F --> G[Model Validation]
+'''
 
 
-
----
-
-### ✅ Step 2: **Textual Description Below It**
-
-Put your textual explanation **after** the Mermaid block, like this:
-
-```markdown
 The Face Detection project follows a structured pipeline leveraging the YOLOv8 model and Google Colab GPU for efficient training and inference:
 
 1. **Environment Setup**  
@@ -70,3 +63,83 @@ The Face Detection project follows a structured pipeline leveraging the YOLOv8 m
 
 7. **Model Validation**  
    - Run a comprehensive validation using the YOLOv8 `val()` method to report final metrics on the dataset
+
+## Dataset
+
+/dataset
+│
+├── images/
+│   ├── train/
+│   │   ├── image1.jpg
+│   │   ├── image2.jpg
+│   │   └── ...
+│   └── val/
+│       ├── image101.jpg
+│       ├── image102.jpg
+│       └── ...
+│
+├── labels/
+│   ├── train/
+│   │   ├── image1.txt
+│   │   ├── image2.txt
+│   │   └── ...
+│   └── val/
+│       ├── image101.txt
+│       ├── image102.txt
+│       └── ...
+│
+└── data.yaml
+
+Download Dataset using the link - https://drive.google.com/file/d/11a64niIzEKQy_1wmrBPY110ToKfzP1DG/view?usp=drive_link
+
+## Howto run
+
+## 🚀 How to Run the Project
+
+### ✅ 1. Open the Colab Notebook
+Open the notebook by clicking the link below or uploading it to your own Google Drive.
+
+📓 **Notebook Name:** `YOLOv8_Face_Detection.ipynb`  
+📍 Make sure it's in your Google Drive if you're opening from there.
+
+---
+
+### ✅ 2. Run the Notebook Step-by-Step
+- Go to [Google Colab](https://colab.research.google.com/)
+- Click **File > Open Notebook**
+- Choose the uploaded `.ipynb` file or paste this GitHub link (if in repo):
+
+
+- Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
+
+---
+
+### ✅ 3. Requirements
+Colab will auto-install dependencies, but here are key packages:
+
+- `ultralytics` – YOLOv8 training and inference  
+- `opencv-python` – image loading and visualization  
+- `matplotlib` – plotting metrics  
+
+These are installed in the notebook itself, so no local installation is needed.
+
+---
+
+### ✅ 4. Google Drive Setup
+Make sure your dataset and model save paths point to valid folders in your Drive.  
+The notebook includes code to:
+
+- Mount Google Drive  
+- Access dataset from: `/content/drive/MyDrive/your-dataset-folder/`  
+- Save model weights and output predictions back to Drive  
+
+---
+
+### ✅ 5. Output
+- 📦 Trained model saved as: `best.pt`  
+- 🖼️ Predictions saved with bounding boxes in the `runs/predict/` directory  
+- 📊 Evaluation metrics printed and visualized at the end  
+
+
+
+
