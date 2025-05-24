@@ -130,14 +130,16 @@ The notebook includes code to:
 - 🖼️ Predictions saved with bounding boxes in the `runs/predict/` directory  
 - 📊 Evaluation metrics printed and visualized at the end
 
+
 ## Using pretrained Model
 
-### Download the pretrained model using the link and upload it to drive  -
+### Download the pretrained model using the link and upload it to drive  
 https://github.com/dhanya807/Face_Detection/blob/main/face_yolov8n_best.pt
--Save the colab in the drive -
--Replace the trained model path  to your drive link
--Replace the prediction image path to your image path in the drive
--Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
+- Save and save the colab in the drive -
+- Open the colab Noetebook from Drive
+- Replace the trained model path  to your drive link
+- Replace the prediction image path to your image path in the drive
+- Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
 
 
 
