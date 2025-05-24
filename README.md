@@ -17,19 +17,27 @@ This project focuses on face detection using a fine-tuned YOLOv8 model. It takes
 
 The project is designed for image analysis tasks that require robust face localization without real-time video processing.
 
------
 
 ## Project Architecture
 
+```mermaid
 flowchart TD
     A[Environment Setup] --> B[Data Preparation]
     B --> C[Model Training]
-    C --> D[Evaluation]
+    C --> D[Evaluation & Metrics Visualization]
     D --> E[Model Saving]
     E --> F[Inference & Prediction]
+    F --> G[Model Validation]
 
 
 
+---
+
+### ✅ Step 2: **Textual Description Below It**
+
+Put your textual explanation **after** the Mermaid block, like this:
+
+```markdown
 The Face Detection project follows a structured pipeline leveraging the YOLOv8 model and Google Colab GPU for efficient training and inference:
 
 1. **Environment Setup**  
@@ -61,10 +69,4 @@ The Face Detection project follows a structured pipeline leveraging the YOLOv8 m
    - Save predicted output images back to Google Drive  
 
 7. **Model Validation**  
-   - Run a comprehensive validation using the YOLOv8 `val()` method to report final metrics on the dataset  
-
-
-
-
-
-
+   - Run a comprehensive validation using the YOLOv8 `val()` method to report final metrics on the dataset
