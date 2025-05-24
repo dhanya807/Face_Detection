@@ -94,8 +94,8 @@ https://github.com/dhanya807/Face_Detection/blob/main/Face_Detection.ipynb
 - Go to [Google Colab](https://colab.research.google.com/)
 - Click **File > Open Notebook**
 - Choose the uploaded `.ipynb` file.
-- Download the dataset and upload it your file.
-- Change the path to your drive path 
+- Download the dataset and upload it your drive.
+- Change the path to your drive path containing the dataset.
 - Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
 
 
@@ -128,14 +128,27 @@ The notebook includes code to:
 - 📊 Evaluation metrics printed and visualized at the end
 
 
-## Using pretrained Model
 
-### Download the pretrained model using the link and upload it to drive  
-https://github.com/dhanya807/Face_Detection/blob/main/face_yolov8n_best.pt
-- Download and save the colab in the drive
-https://github.com/dhanya807/Face_Detection/blob/main/Face_Detection_modelcheck.ipynb
-- Open the colab Noetebook from Drive
-- Replace the trained model path  to your drive link
-- Replace the prediction image path to your image path in the drive
-- Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
+
+## Using a Pretrained Model for Inference
+
+If you wish to use a pre-trained model directly for inference without retraining:
+
+1.  **Obtain the Pretrained Model:** Download the `face_yolov8n_best.pt` file from source(https://github.com/dhanya807/Face_Detection/blob/main/face_yolov8n_best.pt).             
+    This file should be placed in a location accessible by your notebook (e.g., your Google Drive if using Colab, or a local `weights/` folder).
+
+2.  **Open the Inference Notebook:** Open the notebook designed for inference (e.g., `Face_Detection_modelcheck.ipynb`).
+
+    * **If cloned locally:** `jupyter notebook Face_Detection_modelcheck.ipynb`
+
+    * **If using Google Colab:** Upload it to your Drive and open from there.
+
+3.  **Update Paths:**
+
+    * **Replace the trained model path** in the notebook to point to the exact location of `face_yolov8n_best.pt` in your Drive or local file system.
+
+    * **Replace the prediction image path** to your desired input image path.
+
+4.  **Run Inference:** Click **Runtime > Run all** to execute the inference cells.
+
 
