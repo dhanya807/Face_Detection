@@ -20,17 +20,6 @@ The project is designed for image analysis tasks that require robust face locali
 
 ## Project Architecture
 
-```mermaid
-flowchart TD
-    A[Environment Setup] --> B[Data Preparation]
-    B --> C[Model Training]
-    C --> D[Evaluation & Metrics Visualization]
-    D --> E[Model Saving]
-    E --> F[Inference & Prediction]
-    F --> G[Model Validation]
-'''
-
-
 The Face Detection project follows a structured pipeline leveraging the YOLOv8 model and Google Colab GPU for efficient training and inference:
 
 1. **Environment Setup**  
@@ -92,14 +81,14 @@ The Face Detection project follows a structured pipeline leveraging the YOLOv8 m
 
 Download Dataset using the link - https://drive.google.com/file/d/11a64niIzEKQy_1wmrBPY110ToKfzP1DG/view?usp=drive_link
 
-## Howto run
 
 ## 🚀 How to Run the Project
 
 ### ✅ 1. Open the Colab Notebook
 Open the notebook by clicking the link below or uploading it to your own Google Drive.
+https://github.com/dhanya807/Face_Detection/blob/main/Face_Detection.ipynb
 
-📓 **Notebook Name:** `YOLOv8_Face_Detection.ipynb`  
+📓 **Notebook Name:** `Face_Detection.ipynb`  
 📍 Make sure it's in your Google Drive if you're opening from there.
 
 ---
@@ -107,10 +96,11 @@ Open the notebook by clicking the link below or uploading it to your own Google 
 ### ✅ 2. Run the Notebook Step-by-Step
 - Go to [Google Colab](https://colab.research.google.com/)
 - Click **File > Open Notebook**
-- Choose the uploaded `.ipynb` file or paste this GitHub link (if in repo):
-
-
+- Choose the uploaded `.ipynb` file.
+- Download the dataset and upload it your file.
+- Change the path to your drive path 
 - Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
+
 
 ---
 
@@ -138,7 +128,11 @@ The notebook includes code to:
 ### ✅ 5. Output
 - 📦 Trained model saved as: `best.pt`  
 - 🖼️ Predictions saved with bounding boxes in the `runs/predict/` directory  
-- 📊 Evaluation metrics printed and visualized at the end  
+- 📊 Evaluation metrics printed and visualized at the end
+
+## Using pretrained Model
+
+### Download the pretrained model using the link -
 
 
 
