@@ -53,31 +53,31 @@ The Face Detection project follows a structured pipeline leveraging the YOLOv8 m
 7. **Model Validation**  
    - Run a comprehensive validation using the YOLOv8 `val()` method to report final metrics on the dataset
 
-## Dataset
+
+## 📁 Dataset Structure
 
 /dataset
-│
-├── images/
-│   ├── train/
-│   │   ├── image1.jpg
-│   │   ├── image2.jpg
-│   │   └── ...
-│   └── val/
-│       ├── image101.jpg
-│       ├── image102.jpg
-│       └── ...
-│
-├── labels/
-│   ├── train/
-│   │   ├── image1.txt
-│   │   ├── image2.txt
-│   │   └── ...
-│   └── val/
-│       ├── image101.txt
-│       ├── image102.txt
-│       └── ...
-│
+├── images
+│ ├── train
+│ │ ├── image1.jpg
+│ │ ├── image2.jpg
+│ │ └── ...
+│ └── val
+│ ├── image101.jpg
+│ ├── image102.jpg
+│ └── ...
+├── labels
+│ ├── train
+│ │ ├── image1.txt
+│ │ ├── image2.txt
+│ │ └── ...
+│ └── val
+│ ├── image101.txt
+│ ├── image102.txt
+│ └── ...
 └── data.yaml
+
+
 
 Download Dataset using the link - https://drive.google.com/file/d/11a64niIzEKQy_1wmrBPY110ToKfzP1DG/view?usp=drive_link
 
