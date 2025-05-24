@@ -17,6 +17,16 @@ This project focuses on face detection using a fine-tuned YOLOv8 model. It takes
 
 The project is designed for image analysis tasks that require robust face localization without real-time video processing.
 
+## High End Architecture
+```mermaid
+flowchart TD
+    A[Environment Setup] --> B[Data Preparation]
+    B --> C[Model Training]
+    C --> D[Evaluation & Metrics Visualization]
+    D --> E[Model Saving]
+    E --> F[Inference & Prediction]
+    F --> G[Model Validation]
+```
 
 ## Project Architecture
 
@@ -58,22 +68,10 @@ The Face Detection project follows a structured pipeline leveraging the YOLOv8 m
 /dataset
 ├── images
 │   ├── train
-│   │   ├── image1.jpg
-│   │   ├── image2.jpg
-│   │   └── ...
 │   └── val
-│       ├── image101.jpg
-│       ├── image102.jpg
-│       └── ...
 ├── labels
 │   ├── train
-│   │   ├── image1.txt
-│   │   ├── image2.txt
-│   │   └── ...
 │   └── val
-│       ├── image101.txt
-│       ├── image102.txt
-│       └── ...
 └── data.yaml
 
 Download Dataset using the link - https://drive.google.com/file/d/11a64niIzEKQy_1wmrBPY110ToKfzP1DG/view?usp=drive_link
@@ -138,18 +136,4 @@ https://github.com/dhanya807/Face_Detection/blob/main/Face_Detection_modelcheck.
 - Replace the trained model path  to your drive link
 - Replace the prediction image path to your image path in the drive
 - Click **Runtime > Run all** to execute all cells from top to bottom, or run manually step by step.
-
-
-
-## High End Architecture
-```mermaid
-flowchart TD
-    A[Environment Setup] --> B[Data Preparation]
-    B --> C[Model Training]
-    C --> D[Evaluation & Metrics Visualization]
-    D --> E[Model Saving]
-    E --> F[Inference & Prediction]
-    F --> G[Model Validation]
-
-
 
