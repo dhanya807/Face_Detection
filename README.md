@@ -76,7 +76,7 @@ The Face Detection project follows a structured pipeline leveraging the YOLOv8 m
 └── data.yaml
 ```
 
-Download Dataset using the link - https://drive.google.com/file/d/11a64niIzEKQy_1wmrBPY110ToKfzP1DG/view?usp=drive_link
+Download Dataset using the link - https://www.kaggle.com/datasets/fareselmenshawii/face-detection-dataset
 
 
 ## 🚀 How to Run the Project
