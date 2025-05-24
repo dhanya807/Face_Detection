@@ -17,59 +17,53 @@ This project focuses on face detection using a fine-tuned YOLOv8 model. It takes
 
 The project is designed for image analysis tasks that require robust face localization without real-time video processing.
 
-**Project Architecture**
-```mermaid
+-----
+
+## Project Architecture
+
 flowchart TD
     A[Environment Setup] --> B[Data Preparation]
     B --> C[Model Training]
-    C --> D[Evaluation & Metrics Visualization]
+    C --> D[Evaluation]
     D --> E[Model Saving]
     E --> F[Inference & Prediction]
-    F --> G[Model Validation]
 
-    subgraph Environment_Setup
-        A1["Check GPU with nvidia-smi"]
-        A2["Install ultralytics library"]
-        A3["Mount Google Drive"]
-        A --> A1 --> A2 --> A3
-    end
 
-    subgraph Data_Preparation
-        B1["Load & visualize sample images"]
-        B2["Create dataset YAML file"]
-        B --> B1 --> B2
-    end
 
-    subgraph Model_Training
-        C1["Fine-tune YOLOv8n model"]
-        C2["Set epochs, batch size, img size, etc."]
-        C3["Monitor training logs and loss curves"]
-        C --> C1 --> C2 --> C3
-    end
+The Face Detection project follows a structured pipeline leveraging the YOLOv8 model and Google Colab GPU for efficient training and inference:
 
-    subgraph Evaluation_Visualization
-        D1["Load training results CSV"]
-        D2["Plot box loss, precision, recall, mAP"]
-        D3["Validate on validation dataset"]
-        D --> D1 --> D2 --> D3
-    end
+1. **Environment Setup**  
+   - Check GPU availability using `nvidia-smi`  
+   - Install required libraries like `ultralytics` for YOLOv8  
+   - Mount Google Drive to access dataset and save results  
 
-    subgraph Model_Saving
-        E1["Copy best.pt weights to Drive"]
-        E --> E1
-    end
+2. **Data Preparation**  
+   - Load and visualize sample training images using OpenCV  
+   - Prepare the dataset YAML file specifying training and validation image paths, number of classes, and class names  
 
-    subgraph Inference_Prediction
-        F1["Load saved model weights"]
-        F2["Predict on images"]
-        F3["Display & save output images"]
-        F --> F1 --> F2 --> F3
-    end
+3. **Model Training**  
+   - Fine-tune the pre-trained YOLOv8n model with the prepared dataset  
+   - Configure training parameters such as epochs, batch size, image size, caching, and worker threads  
+   - Monitor training progress through logs and loss curves  
 
-    subgraph Model_Validation
-        G1["Run YOLOv8 val() method"]
-        G --> G1
-    end
+4. **Evaluation and Metrics Visualization**  
+   - Load training results from CSV files  
+   - Plot key metrics: box loss, precision, recall, and mean Average Precision (mAP) across epochs  
+   - Validate model performance on the validation dataset  
+
+5. **Model Saving**  
+   - Copy the best trained weights (`best.pt`) from the local run directory to Google Drive for later use
+
+6. **Inference and Prediction**  
+   - Load the saved model weights for inference  
+   - Predict on single or multiple validation images, drawing bounding boxes around detected faces  
+   - Display predictions using Matplotlib and OpenCV  
+   - Save predicted output images back to Google Drive  
+
+7. **Model Validation**  
+   - Run a comprehensive validation using the YOLOv8 `val()` method to report final metrics on the dataset  
+
+
 
 
 
